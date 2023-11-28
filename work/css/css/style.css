@@ -54,7 +54,16 @@ input,
 select {
   appearance: none;
 }
-
+input:focus,
+select:focus{
+  outline: none;
+  background: #fff;
+  border-color: rgba(93, 130, 194, 0.4);
+  box-shadow: 0px 0px 0px 2px rgba(1, 90, 191, 0.1);
+}
+.focus-cancel:focus{
+  box-shadow: none;
+}
 .birth-selectarea {
   display: flex;
 }
@@ -185,4 +194,9 @@ select {
 .link-color {
   color: #0170bf;
   text-decoration: none;
+}
+.submit-button:active{
+  background: #fff;
+  color: #0170bf;
+  border: 1px solid #d9d9d9;
 }
